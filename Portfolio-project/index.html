@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiladiCode - Creative Developer</title>
+    <!-- Font from google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen-->
+     <div class="loader">
+        <div class="loader-text">Loading...</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor-->
+     <div class="cursor"></div>
+     <div class="cursor-follower"></div>
+    <!-- Navigation-->
+     <nav>
+        <div class="nav-container">
+            <div class="logo">Saravanan</div>
+             
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div style="display: flex; align-items: center;">
+                <div class="theme-toggle" id="themeToggle">
+                    <span class="theme-toggle-icon light">🔦</span>
+                    <span class="theme-toggle-icon dark">🌑</span>
+                </div>
+            </div>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+     </nav>
+
+     <!-- Mobile Menu-->
+      <div class="mobile-menu" id="mobileMenu">
+         <a href="#">Home</a>
+         <a href="#">About</a>
+         <a href="#">Skills</a>
+         <a href="#">Projects</a>
+         <a href="#">Contact</a>
+      </div>
+
+      <!-- Hero  Section -->
+       <section id="home" class="hero">
+          <div class="hero-bg"></div>
+
+          <div class="hero-content">
+               <h1 class="hero-title">Saravanan</h1>
+               <h2 class="hero-subtitle">Web Developer</h2>
+               <p class="hero-description">Crafting digital experiences that inspire and engage through 
+                innovation design and cutting-edge technologh.
+               </p>
+               <a href="#" class="cta-button">View my work</a>
+          </div>
+
+          <img class="hero-img" src="images/profile.png" alt="profile-img">
+
+          <spline-viewer class="hero-3d-model" url="https://prod.spline.design/7r6FiujG2DNsG8Od/scene.splinecode"></spline-viewer>
+       </section>
+
+    <!-- 3D Model -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.39/build/spline-viewer.js"></script>
+
+    <!-- GSAP Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- About -->
+
+    <section class="about-section">
+        <h1 class="about-title" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">About Me</h1>
+
+        <div class="bento-grid">
+            <div class="card intro" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="1500">
+                <h2 class="card-title">HI THERE, I'M SARAVANAN</h2>
+                <p class="card-text">
+                    I specialize in frontend development, crafting dynamic, visually engaging, and highly responsive websites that provide seamless user experiences. With a strong foundation in HTML, CSS, and JavaScript, I focus on building modern web interfaces that are not only aesthetically appealing but also optimized for performance and accessibility. My expertise extends to advanced frameworks like React and Tailwind CSS, enabling me to create interactive, scalable, and efficient applications. Whether it's designing sleek UI components, implementing smooth animations, or enhancing user interactions, my goal is to develop web solutions that are both functional and innovative.
+                </p>
+
+                <img src="images/gradient1.png" alt="" class="background-img">
+
+                <div class="model-box">
+                 <spline-viewer class="info-3D" url="https://prod.spline.design/NwBynUReG9NwoBuR/scene.splinecode"></spline-viewer>
+                </div>
+            </div>
+
+            <div class="card tech" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="1500">
+                <h2 class="card-title">TECH STACK</h2>
+                <p class="card-text">
+                    I specialize in a diverse range of programming languages, frameworks, and development tools that empower me to build robust, scalable, and high-performing applications. With a strong command of HTML, CSS, and JavaScript, I create visually appealing and responsive web interfaces that enhance user engagement. My expertise extends to modern frameworks like React, Tailwind CSS, and Spline, enabling me to develop interactive, efficient, and maintainable front-end architectures.
+                </p>
+
+                <img src="images/gradient 2.png" alt="" class="background-img">
+                <img src="images/skills group.png" alt="" class="skills-group">
+            </div>
+
+            <div class="card time" data-aos="fade-up"
+            data-aos-duration="1500">
+                <h2 class="card-title">VERY FLEXIBLE WITH COMMUNICATIONS & LOCATIONS</h2>
+
+                <p class="card-text">Based in Italy, Bari and open to remote work worldwide.</p>
+
+                <img src="images/gradient3&4.png" alt="" class="background-img">
+
+                <button class="btn"><i class='bx bx-send'></i> CONTACT ME</button>
+            </div>
+
+            <div class="card passion" data-aos="fade-up"
+            data-aos-duration="1500">
+                <h2 class="card-title">PASSION FOR CODING</h2>
+                <p class="card-text">
+                    Solving problems and building solutions through code. Programming is my profession—it's my passion. I enjoy exploring new technologies and enhancing my skills.
+                </p>
+
+                <img src="images/gradient3&4.png" alt="" class="background-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Project -->
+
+    <section class="projects-section">
+        <h3 data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">My Projects</h3>
+
+        <div class="slider" style="
+            --width: 60rem;
+            --height: 40rem;
+            --quantity: 4;
+        ">
+
+            <div class="list">
+                <div class="item" style="--position: 1"><video id="projectVideo1" loop playsinline src="video/task-1.mp4"></video></div>
+
+                <div class="item" style="--position: 2"><video id="projectVideo2" loop playsinline src="video/task-2.mp4"></video></div>
+
+                <div class="item" style="--position: 3"><video id="projectVideo3" loop playsinline src="video/task-3.mp4"></video></div>
+
+                <div class="item" style="--position: 4"><video id="projectVideo4" loop playsinline src="video/sample task4.mp4"></video></div>
+            </div>
+
+        </div>
+    </section>
+
+      <!-- CONTACT SECTION -->
+     <section class="contact-section" >
+        <div class="section-header" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+            <h3>Get In Touch</h3>
+            <p>Have a project in mind or just want to say hello? Drop me a message</p>
+        </div>
+
+        <div class="contact-grid" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0" data-aos-duration="1500">
+
+            <div class="info-card">
+                <h3>Contact info</h3>
+
+                <div class="contact-item">
+                    <p>Email</p>
+                    <a href="mrsaravananmrkera@gmail.com">mrsaravananmrkera@gmail.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <p>Phone</p>
+                    <a href="#">+91  63790981**</a>
+                </div>
+
+                <div class="contact-item">
+                    <p>Location</p>
+                    <a href="https://maps.app.goo.gl/LsMcie5DZ3RmHbcs5?g_st=aw">Arakkonam, Nemili</a>
+                </div>
+
+                <div class="social-link">
+                    <p>Contacy with me</p>
+                    <a href="https://github.com/Saro1205">GitHub</a>
+                    <a href="https://www.linkedin.com/in/saravanan-n-39bab8257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a>
+                    <a href="https://www.instagram.com/_saravana_2005_/profilecard/?igsh=MTRyd2Z2dm1ycDJxYQ==">Instagram</a>
+                </div>
+
+            </div>
+
+            <div class="info-card">
+                <div class="info-card-content">
+                    <h3>Send Message</h3>
+
+                    <form id="contactForm">
+
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your name" required class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="subject" required class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" id="message" placeholder="Your Message" required class="form-control"></textarea>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="message-btn">Send Message</button>
+
+                        <div class="success-message" id="successMessage">
+                            Message sent successfully! I'll get back to you soon.
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <footer>
+        <h3>©️2025, Made with ❤️ by SARAVANAN</h3>
+        <div class="box-icons">
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+            <a href="https://github.com/Saro1205"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/saravanan-n-39bab8257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin-square' ></i></a>
+        </div>
+     </footer>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.39/build/spline-viewer.js"></script>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
